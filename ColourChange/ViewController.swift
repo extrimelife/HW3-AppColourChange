@@ -57,16 +57,12 @@ class ViewController: UIViewController {
     
     private func setupStaticLabels()  {
         let staticLabels = [redStaticLabel, greenStaticLabel, blueStaticLabel]
-        for staticLabel in staticLabels {
+        let nameLabels = ["Red:", "Green:", "Blue:"]
+        for (index, staticLabel) in staticLabels.enumerated() {
             if let staticLabel = staticLabel {
+                staticLabel.text = nameLabels[index]
                 staticLabel.textColor = .white
-                if staticLabel == redStaticLabel {
-                    redStaticLabel.text = "Red:"
-                } else if staticLabel == greenStaticLabel {
-                    greenStaticLabel.text = "Green:"
-                } else {
-                    blueStaticLabel.text = "Blue:"
-                }
+                
             }
         }
     }
