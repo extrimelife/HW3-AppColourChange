@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B7DEF68C289C55C000F6F4A2 /* ColourChange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColourChange.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DEF68C289C55C000F6F4A2 /* AppColourChange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppColourChange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DEF68F289C55C000F6F4A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7DEF691289C55C000F6F4A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B7DEF693289C55C000F6F4A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		B7DEF68D289C55C000F6F4A2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B7DEF68C289C55C000F6F4A2 /* ColourChange.app */,
+				B7DEF68C289C55C000F6F4A2 /* AppColourChange.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B7DEF68B289C55C000F6F4A2 /* ColourChange */ = {
+		B7DEF68B289C55C000F6F4A2 /* AppColourChange */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B7DEF6A0289C55C300F6F4A2 /* Build configuration list for PBXNativeTarget "ColourChange" */;
+			buildConfigurationList = B7DEF6A0289C55C300F6F4A2 /* Build configuration list for PBXNativeTarget "AppColourChange" */;
 			buildPhases = (
 				B7DEF688289C55C000F6F4A2 /* Sources */,
 				B7DEF689289C55C000F6F4A2 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = ColourChange;
+			name = AppColourChange;
 			productName = ColourChange;
-			productReference = B7DEF68C289C55C000F6F4A2 /* ColourChange.app */;
+			productReference = B7DEF68C289C55C000F6F4A2 /* AppColourChange.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B7DEF687289C55C000F6F4A2 /* Build configuration list for PBXProject "ColourChange" */;
+			buildConfigurationList = B7DEF687289C55C000F6F4A2 /* Build configuration list for PBXProject "AppColourChange" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B7DEF68B289C55C000F6F4A2 /* ColourChange */,
+				B7DEF68B289C55C000F6F4A2 /* AppColourChange */,
 			);
 		};
 /* End PBXProject section */
@@ -337,7 +337,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B7DEF687289C55C000F6F4A2 /* Build configuration list for PBXProject "ColourChange" */ = {
+		B7DEF687289C55C000F6F4A2 /* Build configuration list for PBXProject "AppColourChange" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B7DEF69E289C55C300F6F4A2 /* Debug */,
@@ -346,7 +346,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B7DEF6A0289C55C300F6F4A2 /* Build configuration list for PBXNativeTarget "ColourChange" */ = {
+		B7DEF6A0289C55C300F6F4A2 /* Build configuration list for PBXNativeTarget "AppColourChange" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B7DEF6A1289C55C300F6F4A2 /* Debug */,
