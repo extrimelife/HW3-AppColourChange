@@ -27,9 +27,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupWindowView()
-        setupStaticLabels()
-        setupRangeLabels()
-        setupSliders()
+        setupStaticLabel()
+        setupRangeLabel()
+        setupSlider()
     }
     
     @IBAction func redSliderAction() {
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         
     }
     
-    private func setupStaticLabels()  {
+    private func setupStaticLabel()  {
         let staticLabels = [redStaticLabel, greenStaticLabel, blueStaticLabel]
         let nameLabels = ["Red:", "Green:", "Blue:"]
         for (index, staticLabel) in staticLabels.enumerated() {
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
         }
     }
     
-    private func setupRangeLabels() {
+    private func setupRangeLabel() {
         let rangeLabels = [redRangeLabel, greenRangeLabel, blueRangeLabel]
         for rangeLabel in rangeLabels {
             if let rangeLabel = rangeLabel {
@@ -78,7 +78,7 @@ class ViewController: UIViewController {
         }
     }
     
-    private func setupSliders() {
+    private func setupSlider() {
         let sliders = [redSlider, greenSlider, blueSlider]
         let colours: [UIColor] = [.red, .green, .blue]
         for (index, slider) in sliders.enumerated() {
