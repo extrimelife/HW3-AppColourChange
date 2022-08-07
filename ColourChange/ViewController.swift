@@ -30,23 +30,23 @@ class ViewController: UIViewController {
         setupStaticLabel()
         setupRangeLabel()
         setupSlider()
+        setupColour()
     }
     
     @IBAction func redSliderAction() {
-        colorWindow.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 0.7)
+        setupColour()
         redRangeLabel.text = String(Float(round(redSlider.value * 100) / 100))
-        greenRangeLabel.text = String(Float(round(greenSlider.value * 100) / 100))
-        blueRangeLabel.text = String(Float(round(blueSlider.value * 100) / 100))
+        
     }
     
     @IBAction func greenSliderAction() {
-        redSliderAction()
-        
+        setupColour()
+        greenRangeLabel.text = String(Float(round(greenSlider.value * 100) / 100))
     }
     
     @IBAction func blueSliderAction() {
-        redSliderAction()
-        
+        setupColour()
+        blueRangeLabel.text = String(Float(round(blueSlider.value * 100) / 100))
     }
     
     private func setupWindowView() {
@@ -84,11 +84,16 @@ class ViewController: UIViewController {
         for (index, slider) in sliders.enumerated() {
             if let slider = slider {
                 slider.minimumTrackTintColor = colours[index]
-                slider.value = 0
-                slider.minimumValue = 0
-                slider.maximumValue = 1
             }
         }
+    }
+}
+
+extension ViewController {
+    func setupColour() {
+        colorWindow.backgroundColor = UIColor(red: CGFloat(redSlider.value),
+                                              green: CGFloat(greenSlider.value),
+                                              blue: CGFloat(blueSlider.value), alpha: 0.7)
     }
 }
 
